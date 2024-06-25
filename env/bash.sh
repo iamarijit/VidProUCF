@@ -1,0 +1,1 @@
+docker exec -it vid_sys bash
