@@ -31,11 +31,22 @@ pip install -r requirements.txt
 
 ## Usage
 
+### Download dataset
+```
+wget  --no-check-certificate  https://www.crcv.ucf.edu/datasets/human-actions/ucf101/UCF101.rar
+unrar  x  UCF101.rar
+```
+Convert the raw videos to H264 codec which is supported by HTML5 video player
+```
+./convert.sh
+```
+**Note**: Change  **`video_dir`** to **UCF101** dataset path on local machine
+
 ### Extract & store features
 ```
 python process.py
 ```
-**Note**: Modify  **`root`** such that it points to the **UCF101** dataset on your local machine
+**Note**: Change  **`root`** to **UCF101** dataset path on local machine
 
 ###  Run web app to filter videos
 ```
