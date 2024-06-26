@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -y \
     git \
     zlib1g-dev \
     locales \
+    unrar-free \
     ffmpeg
 
 WORKDIR /app
